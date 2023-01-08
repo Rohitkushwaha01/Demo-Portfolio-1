@@ -11,6 +11,10 @@ body{
     padding: 30px;
 }
 
+.navbar{
+    padding: 0px 30px;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -108,11 +112,10 @@ label{
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
 }
 
 .info{
-    padding: 70px;
+    padding: 30px;
     width: 30%;
     flex-grow: 1;
 }
@@ -137,7 +140,7 @@ label{
 
 .programmer-image{
     margin: auto;
-    padding: 70px;
+    padding: 30px;
 }
 
 .programmer-image img{
@@ -150,6 +153,12 @@ label{
     justify-content: space-between;
     width: 100%;
     margin-top: 20px;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
 }
 
 .d-flex i{
@@ -186,6 +195,10 @@ label{
     }
     .programmer-image{
         padding: 30px;
+        margin: auto;
+    }
+    .d-flex{
+        width: 50%;
     }
 }
 
