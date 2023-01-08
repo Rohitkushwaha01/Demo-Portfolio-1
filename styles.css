@@ -22,6 +22,10 @@ nav{
     transition: height .2s ease-in;
 }
 
+.logo{
+    text-align: start;
+}
+
 ul{    
     display: flex;
     justify-content: space-evenly;
@@ -104,6 +108,7 @@ label{
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .info{
@@ -139,6 +144,19 @@ label{
     width: 100%;
 }
 
+.all-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.d-flex i{
+    font-size: 2rem;
+    color: #00bd95;
+}
+
 @media screen and (max-width: 870px){
     nav{
         display: block;
@@ -164,7 +182,10 @@ label{
         margin-top: 40px;
     }
     .info{
-        padding: 20px;
+        padding: 20px 0px;
+    }
+    .programmer-image{
+        padding: 30px;
     }
 }
 
@@ -185,5 +206,8 @@ label{
     }
     .info{
         padding: 5px;
+    }
+    .programmer-image{
+        padding: 0px;   
     }
 }
