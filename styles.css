@@ -6,6 +6,14 @@ body{
     overflow-x: hidden;
 }
 
+:root{
+    --primary-color: #00bd95;
+    --secondary-color: #fff;
+    --primary-bg-color: #21272f;
+    --secondary-bg-color: #171c23;
+    --primary-font-family: 'Roboto Slab', serif
+}
+
 /* width */
 .w-100{
     width: 100%;
@@ -15,13 +23,11 @@ body{
 .p-30{
     padding: 30px;
 }
-
 .p-lr{
     padding: 0px 30px;
 }
 
 /* flex */
-
 .d-flex{
     display: flex;
     justify-content: space-between;
@@ -29,22 +35,20 @@ body{
 }
 
 /* span */
-
 span{
-    color: #00bd95;
+    color: var(--primary-color);
     font-size: 2.5rem;
     font-weight: bold;
 }
 
 .landing{
-    background-color: #21272f;
-    color: white;
-    padding: 30px;
+    background-color: var(--primary-bg-color);
+    color: var(--secondary-color);
     margin: 0px;
 }
 
 nav{
-    font-family: 'Roboto Slab', serif;
+    font-family: var(--primary-font-family);
     font-weight: bold;
     position: relative;
     height: 115px;
@@ -66,12 +70,12 @@ ul{
 }
 
 nav ul li:hover{
-    color: #00bd95;
+    color: var(--primary-color);
 }
 
 .layer{
     font-size: 1.5rem;
-    color: #00bd95;
+    color: var(--primary-color);
 }
 
 .logo label{
@@ -84,12 +88,12 @@ nav ul li:hover{
     justify-content: space-evenly;
     width: 250px;
     padding: 8px 0px;
-    border: 1px solid #00bd95;
+    border: 1px solid var(--primary-color);
 }
 
 .search-icon::after{
     content: '';
-    border-left: 4px solid #00bd95;
+    border-left: 4px solid var(--primary-color);
     margin-left: 10px;
 }
 
@@ -97,7 +101,7 @@ nav ul li:hover{
     background:none;
     border: none;
     outline: none;
-    color:white;
+    color:var(--secondary-color);
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: bold;
     letter-spacing: 1.2px;
@@ -108,7 +112,7 @@ nav ul li:hover{
 }
 
 .search-btn{
-    background-color: #00bd95;
+    background-color: var(--primary-color);
     border: none;
     padding: 5px 10px;
 }
@@ -128,7 +132,7 @@ nav ul li:hover{
 }
 
 .main{
-    font-family: 'Roboto Slab', serif;
+    font-family: var(--primary-font-family);
     flex-wrap: wrap;
     
 }
@@ -144,7 +148,7 @@ nav ul li:hover{
 
 .info button{
     padding: 15px 15px;
-    background-color: #00bd95;
+    background-color: var(--primary-color);
     color: black;
     border: none;
     border-radius: 8px;
@@ -164,29 +168,44 @@ nav ul li:hover{
 
 .icons i{
     font-size: 2rem;
-    color: #00bd95;
+    color: var(--primary-color);
 }
+
+/* Skills-css */
+/* .skills{
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-color);
+}
+
+.skill-container{
+    width: 100%;
+    position: relative;
+}
+
+.skill-list{
+    position: absolute;
+} */
 
 /* Services-css */
 
 .services{
-    background-color: #171c23;
+    background-color: var(--primary-bg-color);
+    font-family: var(--primary-font-family);
     display: flex;
-    font-family: 'Roboto Slab', serif;
 }
 
 .service-label{
     font-size: 1.5rem;
-    color: white;
+    color: var(--secondary-color);
 }
 
 .container{
-    color: white;
+    color: var(--secondary-color);
     flex-wrap: wrap;
 }
 
 .container-item{
-    background-color: #21272f;
+    background-color: var(--secondary-bg-color);
     border-radius: 10px;
     width: 200px;
     text-align: center;
