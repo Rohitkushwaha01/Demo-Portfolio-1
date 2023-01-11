@@ -172,19 +172,47 @@ nav ul li:hover{
 }
 
 /* Skills-css */
-/* .skills{
+.skills{
     background-color: var(--secondary-bg-color);
     color: var(--secondary-color);
 }
 
-.skill-container{
-    width: 100%;
+.skills ul{
+    background-color: #21272f;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    margin: auto;
     position: relative;
+    transform: rotate(0deg);
+    transition: transform .3s ease-in;
 }
 
-.skill-list{
+.skills ul > * {
     position: absolute;
-} */
+    display: inline;
+}
+
+.skills .item1{
+    left: 45%;
+    top: 5%;
+}
+
+.skills .item2{
+    top: 45%;
+    right: 5%;
+}
+
+.skills .item3{
+    top: 90%;
+    left: 45%;
+}
+
+.skills .item4{
+    top: 45%;
+    left: 5%;
+}
+
 
 /* Services-css */
 
@@ -252,6 +280,10 @@ nav ul li:hover{
         padding: 30px;
         margin: auto;
     }
+    .skills ul{
+        width: 450px;
+        height: 450px;
+    }
 }
 
 @media screen and (max-width: 470px){
@@ -284,5 +316,9 @@ nav ul li:hover{
     }
     .container{
         padding: 10px;
+    }
+    .skills ul{
+        width: 200px;
+        height: 200px;
     }
 }
