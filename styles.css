@@ -189,11 +189,11 @@ nav ul li:hover {
 
 
 .skills ul {
-    /* background-color: #76767747; */
     border-radius: 50%;
     margin: auto;
     position: relative;
     transform: rotate(0deg);
+    transform-origin: center;
     transition: transform .3s ease-in;
     width: 550px;
     height: 500px;
@@ -269,6 +269,20 @@ nav ul li:hover {
 .skills #item9 {
     top: 36%;
     left: 34%;
+    transform-origin: center;
+}
+
+#item9 i{
+    color: red;
+}
+
+#item1, #item2, #item3, #item4{
+    color: #00bd95;
+    background-color: #21272f;
+}
+
+#item5, #item6, #item7, #item8{
+    color: black;
 }
 
 /* Services-css */
@@ -347,17 +361,27 @@ nav ul li:hover {
         padding: 30px;
         margin: auto;
     }
-
+    .skills{
+        padding: 10px;
+    }
+    .reduce-padd{
+        padding: 0;
+    }
 }
 
-@media screen and (max-width: 505px) {
+@media screen and (max-width: 595px) {
     .skills{
-        height: auto;
+        padding: 0px;
+        height: 600px;
+    }
+
+    .skill-head{
+        padding: 0px 10px;
     }
     
     .skills ul {
-        width: 184px;
-        height: 135px;
+        width: 284px;
+        height: 235px;
         border-radius: 0px;
     }
 
@@ -367,12 +391,38 @@ nav ul li:hover {
     }
 
     .skills .item {
-        width: 50px;
-        height: 50px;
+        width: 78px;
+        height: 78px;
     }
 
     .skills ul li i {
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .skills{
+        height: 456px;
+    }
+
+    .skills ul {
+        width: 164px;
+        height: 125px;
+        border-radius: 0px;
+    }
+
+    .skills #item2 {
+        top: 37%;
+        right: -22%;
+    }
+
+    .skills .item {
+        width: 68px;
+        height: 68px;
+    }
+
+    .skills ul li i {
+        font-size: 2.8rem;
     }
 }
 
@@ -414,6 +464,6 @@ nav ul li:hover {
     }
 
     .container {
-        padding: 10px;
+        padding: 0px;
     }
 }
