@@ -182,11 +182,9 @@ nav ul li:hover {
     color: var(--secondary-color);
     padding-bottom: 65px;
     overflow: hidden;
-    height: 100vh;
+    height: 700px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -229,43 +227,48 @@ nav ul li:hover {
 }
 
 .skills #item1 {
-    left: 30%;
-    top: 6%;
+    left: 34%;
+    top: -4%;
 }
 
 .skills #item2 {
-    top: 33%;
-    right: 12%;
+    top: 36%;
+    right: -4%;
 }
 
 .skills #item3 {
-    top: 60%;
-    left: 33%;
+    top: 79%;
+    left: 34%;
 }
 
 .skills #item4 {
-    top: 33%;
-    left: 3%;
+    top: 36%;
+    left: -10%;
 }
 
 .skills #item5 {
-    top: 75%;
-    left: 73%;
+    top: 79%;
+    left: 78%;
 }
 
 .skills #item6 {
-    top: 75%;
-    left: -7%;
+    top: 79%;
+    left: -11%;
 }
 
 .skills #item7 {
     top: -4%;
-    left: 73%;
+    left: 78%;
 }
 
 .skills #item8 {
     top: -4%;
     left: -10%;
+}
+
+.skills #item9 {
+    top: 36%;
+    left: 34%;
 }
 
 /* Services-css */
@@ -347,6 +350,29 @@ nav ul li:hover {
 
 }
 
+@media screen and (max-width: 505px) {
+    .skills ul {
+        width: 184px;
+        height: 135px;
+        border-radius: 0px;
+        margin-top: 110px;
+    }
+
+    .skills #item2 {
+        top: 36%;
+        right: -8%;
+    }
+
+    .skills .item {
+        width: 50px;
+        height: 50px;
+    }
+
+    .skills ul li i {
+        font-size: 2rem;
+    }
+}
+
 @media screen and (max-width: 470px) {
 
     /* lading page */
@@ -386,12 +412,5 @@ nav ul li:hover {
 
     .container {
         padding: 10px;
-    }
-
-    .skills ul {
-        width: 300px;
-        height: 200px;
-        border-radius: 0px;
-        margin-top: 110px;
     }
 }
