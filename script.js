@@ -5,10 +5,7 @@ let nav = document.getElementById("nav");
 
 // skills section
 let skillRotate = document.getElementById("rotate");
-let item1 = document.getElementById("item1");
-let item2 = document.getElementById("item2");
-let item3 = document.getElementById("item3");
-let item4 = document.getElementById("item4");
+let items = document.querySelectorAll(".item");
 
 // Event to toggle navigation
 ham.addEventListener("click", () => {
@@ -28,48 +25,22 @@ const rotate = (angle) => {
   }, 100);
 };
 
-const rotateItem1 = (angle) => {
+const rotateItem = (angle, item) => {
   setInterval(() => {
     if (angle == -360) {
       angle = 0;
     }
-    item1.style.transform = `rotate(${angle}deg)`;
+    item.style.transform = `rotate(${angle}deg)`;
     angle--;
   }, 100);
 };
 
-const rotateItem2 = (angle) => {
-    setInterval(() => {
-      if (angle == -360) {
-        angle = 0;
-      }
-      item2.style.transform = `rotate(${angle}deg)`;
-      angle--;
-    }, 100);
-};
-const rotateItem3 = (angle) => {
-    setInterval(() => {
-      if (angle == -360) {
-        angle = 0;
-      }
-      item3.style.transform = `rotate(${angle}deg)`;
-      angle--;
-    }, 100);
-};
-
-const rotateItem4 = (angle) => {
-    setInterval(() => {
-      if (angle == -360) {
-        angle = 0;
-      }
-      item4.style.transform = `rotate(${angle}deg)`;
-      angle--;
-    }, 100);
-};
-
-
 rotate(0);
-rotateItem1(2);
-rotateItem2(2);
-rotateItem3(2);
-rotateItem4(2);
+console.log(items)
+// items.map(item =>{
+//   rotateItem(2, item)
+// })
+
+items.forEach(item=>{
+  rotateItem(5,item);
+})
