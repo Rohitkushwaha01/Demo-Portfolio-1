@@ -182,7 +182,7 @@ nav ul li:hover {
     color: var(--secondary-color);
     padding-bottom: 65px;
     overflow: hidden;
-    height: 700px;
+    height: 400px;
     display: flex;
     flex-direction: column;
 }
@@ -355,7 +355,6 @@ nav ul li:hover {
         width: 184px;
         height: 135px;
         border-radius: 0px;
-        margin-top: 110px;
     }
 
     .skills #item2 {
