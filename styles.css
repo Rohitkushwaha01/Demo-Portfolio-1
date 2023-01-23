@@ -182,7 +182,7 @@ nav ul li:hover {
     color: var(--secondary-color);
     padding-bottom: 65px;
     overflow: hidden;
-    height: 400px;
+    height: 700px;
     display: flex;
     flex-direction: column;
 }
@@ -351,6 +351,10 @@ nav ul li:hover {
 }
 
 @media screen and (max-width: 505px) {
+    .skills{
+        height: auto;
+    }
+    
     .skills ul {
         width: 184px;
         height: 135px;
