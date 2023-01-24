@@ -243,7 +243,7 @@ nav ul li:hover {
 
 .skills #item4 {
     top: 36%;
-    left: -10%;
+    left: -6%;
 }
 
 .skills #item5 {
@@ -253,7 +253,7 @@ nav ul li:hover {
 
 .skills #item6 {
     top: 79%;
-    left: -11%;
+    left: -6%;
 }
 
 .skills #item7 {
@@ -263,7 +263,7 @@ nav ul li:hover {
 
 .skills #item8 {
     top: -4%;
-    left: -10%;
+    left: -8%;
 }
 
 .skills #item9 {
@@ -402,18 +402,19 @@ nav ul li:hover {
 
 @media screen and (max-width: 485px) {
     .skills{
-        height: 456px;
+        height: 520px;
     }
 
     .skills ul {
-        width: 164px;
-        height: 125px;
+        width: 200px;
+        height: 155px;
         border-radius: 0px;
+        margin-top: 100px;
     }
 
     .skills #item2 {
         top: 37%;
-        right: -22%;
+        right: -13%;
     }
 
     .skills .item {
