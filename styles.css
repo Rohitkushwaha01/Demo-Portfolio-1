@@ -316,6 +316,38 @@ nav ul li:hover {
     font-size: 6rem;
 }
 
+/* Footer */
+.footer{
+    background-color: var(--secondary-bg-color);
+    font-family: var(--primary-font-family);
+    color: var(--primary-color);
+}
+
+.content-box{
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.box1{
+    width: 50%;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.box2{
+    width: 32%;
+}
+
+.foot-head{
+    width: 100%;
+    align-items: flex-start;
+}
+
+.copyright{
+    text-align: center;
+    background-color: var(--primary-bg-color);
+}
+
 @media screen and (max-width: 885px) {
 
     /* Landing page-css */
@@ -397,6 +429,16 @@ nav ul li:hover {
 
     .skills ul li i {
         font-size: 3rem;
+    }
+
+    .content-box{
+        justify-content: center;
+        padding: 10%;
+    }
+
+    .box1, .box2{
+        width: 100%;
+        padding: 10%;
     }
 }
 
