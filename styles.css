@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Roboto+Slab:wght@300&display=swap');
 
+html{
+    background-color: #171c23;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -272,16 +276,55 @@ nav ul li:hover {
     transform-origin: center;
 }
 
-#item9 i{
+#line1, #line2, #line3,#line4{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #00bd95;
+    transition: all 1s ease-in;
+    z-index: -1;
+}
+
+#line2{
+    position: absoulte;
+    left: 4%;
+}
+
+#line3{
+    position: absolute;
+    bottom: 8%;
+}
+
+#line4{
+    position: absolute;
+    top: 8%;
+    left: 91%;
+}
+
+.line-increase-h{
+    height: 90% !important;
+}
+
+.line-increase-w{
+    width: 100% !important;
+}
+
+#item9 i {
     color: red;
 }
 
-#item1, #item2, #item3, #item4{
+#item1,
+#item2,
+#item3,
+#item4 {
     color: #00bd95;
     background-color: #21272f;
 }
 
-#item5, #item6, #item7, #item8{
+#item5,
+#item6,
+#item7,
+#item8 {
     color: black;
 }
 
@@ -317,36 +360,56 @@ nav ul li:hover {
 }
 
 /* Footer */
-.footer{
+.footer {
     background-color: var(--secondary-bg-color);
     font-family: var(--primary-font-family);
     color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
 }
 
-.content-box{
+.content-box {
     align-items: flex-start;
     flex-wrap: wrap;
 }
 
-.box1{
+.box1 {
     width: 50%;
     justify-content: start;
     align-items: flex-start;
 }
 
-.box2{
+.box2 {
     width: 32%;
 }
 
-.foot-head{
+.foot-head {
     width: 100%;
     align-items: flex-start;
 }
 
-.copyright{
-    text-align: center;
-    background-color: var(--primary-bg-color);
+.landing, .skills, .services, .footer {
+    opacity: 1;
+    transition: transform 1s, opacity 1s;
 }
+
+.section--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+}
+
+.footer-head{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.links p{
+    margin-right: 20px;
+}
+
+
 
 @media screen and (max-width: 885px) {
 
@@ -393,24 +456,26 @@ nav ul li:hover {
         padding: 30px;
         margin: auto;
     }
-    .skills{
+
+    .skills {
         padding: 10px;
     }
-    .reduce-padd{
+
+    .reduce-padd {
         padding: 0;
     }
 }
 
 @media screen and (max-width: 595px) {
-    .skills{
+    .skills {
         padding: 0px;
         height: 600px;
     }
 
-    .skill-head{
+    .skill-head {
         padding: 0px 10px;
     }
-    
+
     .skills ul {
         width: 284px;
         height: 235px;
@@ -431,19 +496,20 @@ nav ul li:hover {
         font-size: 3rem;
     }
 
-    .content-box{
+    .content-box {
         justify-content: center;
         padding: 10%;
     }
 
-    .box1, .box2{
+    .box1,
+    .box2 {
         width: 100%;
         padding: 10%;
     }
 }
 
 @media screen and (max-width: 485px) {
-    .skills{
+    .skills {
         height: 520px;
     }
 
